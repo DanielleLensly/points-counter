@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <title>Points counter</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="main">
+      <h1>Enter points</h1>
+      <h2 id="count-el">0</h2>
+      <div class="buttons">
+        <div class="left-btns btns">
+          <button
+            id="increment-btn"
+            class="change-amount"
+            onclick="increment()"
+          >
+            +1
+          </button>
+          <button
+            id="decrement-btn"
+            class="change-amount"
+            onclick="decrement()"
+          >
+            -1
+          </button>
+        </div>
+        <div class="right-btns btns">
+          <button id="save-btn" class="action-btn" onclick="save()">
+            SAVE
+          </button>
+          <button id="clear-btn" class="action-btn" onclick="clearCount()">
+            Clear
+          </button>
+        </div>
+      </div>
+      <p id="save-el">Previous entries: &nbsp;</p>
+      <p id="clear-el">Previous cleared data: &nbsp;</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
